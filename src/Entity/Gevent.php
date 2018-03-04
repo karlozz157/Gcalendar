@@ -27,6 +27,22 @@ class Gevent
     }
 
     /**
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->event->getId();
+    }
+
+    /**
+     * @return string
+     */
+    public function getHangoutLink()
+    {
+        return $this->event->getHangoutLink();
+    }
+
+    /**
      * @param string $colorId
      *
      * @return $this
