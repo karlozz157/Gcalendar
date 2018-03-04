@@ -9,6 +9,7 @@
         }
     },
     "require": {
+        "php": ">=5.5",
         "google/apiclient": "^2.0"
     }
 }
