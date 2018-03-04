@@ -1,0 +1,14 @@
+{
+    "name":"karlozz157/gcalendar",
+    "type": "library",
+    "description": "Handle Google calendar",
+    "homepage": "https://github.com/karlozz157/gcalendar",
+    "autoload": {
+        "psr-4": {
+            "Gcalendar\\": "src"
+        }
+    },
+    "require": {
+        "google/apiclient": "^2.0"
+    }
+}
