@@ -203,6 +203,23 @@ class Gevent
     }
 
     /**
+     * @return array
+     */
+    public function toArray()
+    {
+        return [
+            'id'           => $this->getId(),
+            'title'        => $this->getTitle(),
+            'description'  => $this->getDescription(),
+            'location'     => $this->getLocation(),
+            'start_date'   => $this->getStartDate()->format('c'),
+            'end_date'     => $this->getEndDate()->format('c'),
+            'hangout_link' => $this->getHangoutLink(),
+            'color_id'     => $this->getColorId(),
+        ];
+    }
+
+    /**
      * @param \DateTime $date
      *
      * @return Google_Service_Calendar_EventDateTime
